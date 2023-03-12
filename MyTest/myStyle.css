@@ -1,0 +1,199 @@
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    body{
+        background: linear-gradient(to top, rgb(1, 1, 26) 0%, rgba(1, 1, 26, 0.5) 100%);
+        height: 100vh;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        max-width: 600px;
+        column-gap: 25px;
+        margin: 100px auto;
+        border-radius: 25px 0 0 25px;
+        background-color: white;
+        box-shadow: 5px 10px 10px  10px rgba(0, 0, 228, 0.1);
+
+    }
+
+    .subContainer{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        margin: 2em auto;
+        background-color: white;
+        width: 1000px;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0px 0px 0px  10px rgba(255, 255, 255, 0.09);
+    }
+    .yourResult{
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+        /* justify-content: space-around; */
+        align-items: center;
+        /* background-color:  rgba(138, 2, 133, 0.3); */
+        background-color:  rgba(76, 0, 255, 0.829);
+        max-width: 300px;
+        min-height: 300px;
+        border-radius:25px;
+    }
+
+    .titleScore{
+        color: rgb(202, 198, 198);
+    }
+
+    div.scorePrincipal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        margin: 20px auto;
+        height: 180px;
+        width: 180px;
+        /* background: linear-gradient( to bottom, rgba(226, 19, 219, 0.829), #E1BDDF ); */
+        background: linear-gradient( to top, rgba(76, 0, 255, 0.1),#887ec2 );
+        box-sizing: border-box;
+        border-radius: 50%;
+        
+    }
+
+    .scorePrincipal >:nth-child(2){
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50pt;
+    }
+
+    sub{
+        font-weight: bolder;
+        font-size: 14pt;
+        color: rgba(226, 226, 226, 0.5);
+    }
+
+    .subtitle{
+        font-size: 25pt;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 25px;
+        row-gap: 10px;
+        color: white;
+    }
+
+
+    /*SUMMARY INTERFACE SETTINGS*/
+    .summary{
+        display: flex;
+        margin-top: 25px;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-basis: 200px;
+        gap: 10px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+    }
+
+
+    .skills{
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .skills> .skill1,.skill2,.skill3,.skill4{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 220px;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 0 auto;
+    }
+
+    .skill1{
+        background-color: rgb(247, 225, 225);
+        color:  rgb(209, 0, 0);
+    }
+    .skill2{
+        background-color: rgb(240, 233, 193);
+        color: rgb(255, 136, 0);
+    }
+    .skill3{
+        background-color: rgb(193, 240, 209);
+        color: rgb(1, 109, 37);
+    }
+    .skill4{
+        background-color: rgb(193, 196, 240);
+        color: rgb(2, 8, 88);
+    }
+
+    button{
+        margin-top: -10px;
+        height: 60px;
+        border-radius: 50px;
+        background-color:  rgba(76, 0, 255, 0.6);
+        transition: 1s;
+        color: white;
+        border: 0;
+        padding: 5px;
+        font-size: 12pt;
+    }
+
+    button:hover{
+        background-color: rgb(76, 0, 255);
+        color: white;
+        border: 1;
+    }
+    span{
+        display: flex;
+        gap:10px;
+        align-items: center;
+        justify-content: center;
+        font-size: 12pt;
+        font-weight: lighter;
+    }
+
+    span.spanScore{
+        color: black;
+        font-weight: bolder;
+    }
+
+    @media (max-width: 600px){
+        .container{
+            display: flex;
+            flex-direction: column;
+            border-radius: 25px 25px 0 0;
+        }
+
+    body{ width:  300px; margin: 0 auto;}
+
+    .yourResult{
+        border-radius: 25px;
+    }
+        .summary{
+            display: flex;
+            max-width: 300px;
+            margin-bottom: 25px;
+            padding: 0 25px;
+        }
+        
+    .skills > h3{
+        display: flex;
+        font-size: 16pt;
+        color: gray;
+    }
+    }
